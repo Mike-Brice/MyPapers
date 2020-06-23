@@ -1,0 +1,59 @@
+\begin{thebibliography}{}
+
+\bibitem[Almeida and Prieto(2013)]{Almeida} Almeida, J. Sánchez  and Prieto, C. Allende, Automated Unsupervised Classification of the {S}loan {D}igital {S}ky {S}urvey {S}tellar {S}pectra using k-{M}eans Clustering, 2013, \apj, 763, 1, 50
+
+\bibitem[Bolton et al.(2012)]{Bolton} Bolton, Adam S. et al., SPECTRAL CLASSIFICATION AND REDSHIFT MEASUREMENT FOR THE {SDSS-III} BARYON OSCILLATION SPECTROSCOPIC SURVEY, 2012, \aj, 144. 144. 1-20
+
+\bibitem[Brice and Andonie(2019)]{brice} Brice, M. and Andonie, R., Classification of Stars using Stellar Spectra collected by the Sloan Digital Sky Survey, 2019, Procedings of the International Joint Conference on Neural Networks (July 2019)
+
+\bibitem[Dawson et al.(2013)]{Dawson} Dawson, Kyle S. et al., THE BARYON OSCILLATION SPECTROSCOPIC SURVEY OF {SDSS-III}, 2013, \aj, 145, 10, 1-41
+
+\bibitem[Gray and Corbally(2009)]{Gray} Gray, R. O. and Corbally, J., C., Stellar Spectral Classification (Princeton University Press), 2009
+
+\bibitem[Ivezic et al.(2014)]{VanderPlas} Ivezic, Zeljko and Connolly, Andrew and VanderPlas, Jacob and Gray, Alexander, Statistics, Data Mining, and Machine Learning in Astronomy: A Practice Python Guide for the Analysis of Survey Data (Princeton University Press), 2014
+
+\bibitem[Jacoby et al.(1984)]{Jacoby} Jacoby, G. H., Hunter, D. A., and Christian, C. A., A library of stellar spectra, 1984, \apjs, 56, 257-281
+
+\bibitem[Japkowicz(2000)]{Japkowicz} Japkowicz, Nathalie, Learning from Imbalanced Data Sets: A Comparison of Various Strategies, 2000, AAAI Press, 10-15
+
+\bibitem[Jaschek and Jaschek(1990)]{Jaschek} Jaschek, C. and Jaschek, M., The Classification of Stars (Cambridge University Press), 1990
+
+\bibitem[Marsland(2015)]{Marsland} Marsland, Stephen, Machine Learning: An Algorithmic Perspective 2nd Edition (CRC Press), 2015
+
+\bibitem[Morgan et al.(1943)]{MorganKeenan} Morgan, W. W. and Keenan, P. C. and Kellman, E., An atlas of stellar spectra, with an outline of spectral classification, 1943, Chicago, III., The University of Chicago Press
+
+\bibitem[Oliphant(2015)]{numpy} Oliphant, Travis E., A guide to NumPy, 2015, Published by Continuum Press, a division of Continuum Analytics, Inc.
+
+\bibitem[Pedregosa et al.(2011)] {scikit-learn} Pedregosa, F. et al., Scikit-learn: Machine Learning in Python, 2011, Journal of Machine Learning Research, 12, 2825-2830
+
+\bibitem[Pickles(1998)]{Pickles} Pickles, A. J., A Stellar Spectral Flux Library: 1150-25000 {\AA}, 1998, \pasp, 110, 863-878
+
+%\bibitem[Gray and Corbally(2014)]{Corbally} R. O. Gray and C. J. Corbally, An Expert Computer Program for Classifying Stars on the MK Spectral Classification System, 2014, \aj, 147, 4, 80
+
+\bibitem[Weaver and Torres-Dodgen(1997)]{Weaver} Weaver, Wm. Bruce and Torres-Dodgen, Ana V. , Accurate Two-Dimensional Classification of Stellar Spectra with Artificial Neural Networks, 1997, \aj, 487, 2, 847
+
+\bibitem[Schierscher and Paunzen(2011)]{Schierscher} Schierscher, F. and Paunzen, E., An Artificial Neural Network approach to classify SDSS stellar spectra, 2011, Astronomische Nachrichten, 332, 6, 597-601
+
+\bibitem[Smee et al.(2013)]{Smee} Smee, Stephen A. et al., The Multi-Object, Fiber-Fed Spectrographs for {SDSS} and the Baryon Oscillation Spectroscopic Survey, 2013, \aj, 146, 32, 1-40
+
+\bibitem[Stoughton et al.(2002)]{Stoughton} Stoughton, Chris et al., SLOAN DIGITAL SKY SURVEY: EARLY DATA RELEASE, 2002, \aj, 123, 485-548
+
+\bibitem[Xing and Guo(2004)]{Xing} Xing, Fei and Guo, Ping, Classification of Stellar Spectral Data Using SVM, 2004, Springer Berlin Heidelberg, 616-621
+
+\bibitem[Yi and Pan(2010)]{YI} Yi, Zhenping and Pan, Jingchang, Application of Random Forest to Stellar Spectra Classification, 2010, IEEE, 3129-3132
+
+\bibitem[York et al.(2000)]{York} York et al., The Sloan Digital Sky Survey: Technical Summary, 2000, \aj, 120, 1579-1587
+
+% URL References
+
+\bibitem[Memmap()]{memmap} Numpy, Memmap, \url{https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.memmap.html}
+
+\bibitem[Python Multiprocessing()]{multiprocessing} Python, Multiprocessing - Process-based Parallelism, "\url{https://docs.python.org/3.7/library/multiprocessing.html#module-multiprocessing}
+
+\bibitem[SDSS()]{boss} Sloan Digital Sky Survey, BOSS Spectrograph, \url{https://data.sdss.org/datamodel/files/BOSS_SPECTRO_REDUX/RUN2D/spectra/PLATE4/spec.html}
+
+\bibitem[SDSS()]{RedClass} Sloan Digital Sky Survey, Classifications and Velocity Dispersions, \url{https://www.sdss.org/dr12/algorithms/redshifts/}
+
+\bibitem[SDSS()]{sdss} Sloan Digital Sky Survey, Sloan Digital Sky Survey, \url{https://www.sdss.org/}
+
+\end{thebibliography}

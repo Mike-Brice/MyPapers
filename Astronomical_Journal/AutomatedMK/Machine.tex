@@ -1,0 +1,61 @@
+\documentclass[./AutomatedMK.tex]{subfiles}
+
+\begin{document}
+% ============================================================================================================
+\section{Machine Learning Background}\label{sec:ML}
+The classifier methods used in these experiments are described and the reasoning for using them is provided. However, there is truly no for sure way to know which methods will work best on any given dataset until it is tried empirically \citep{VanderPlas}. These experiments do not use any standard Feature Selection methods. These experiments apply astronomical knowledge to perform feature selection.
+
+% ============================================================================================================
+\subsection{K-Nearest Neighbors}
+
+K-Nearest Neighbors (KNN) classifies using the K closest datapoints. Lets say someone is in a nightclub and they want to dance. However, they do not know how to dance to the particular song playing. The dancer would look around and see what the nearest people are doing and mimic their dance \citep{Marsland}. This is how KNN works. The sample to be classified "asks" its K-Nearest neighbors what their class is and based on popular vote, decides that the sample must be of that class \citep{Marsland}. This is similar to how the dancer decides that the appropriate dance to that song has to be the dance that the nearest people are dancing \citep{Marsland}. 
+
+However, there can be inherent flaws with this approach. The first is the assumption that the other people are dancing the correct dance or that the nearest neighbors are in fact the correct class. The second is whether the nearest neighbor is actually close by. For the example of the dancer, the nearest dancer could be in the nightclub across the street and as such could be dancing to a different song entirely. To overcome the second flaw, weights can be applied to the vote in the form of distance, the closer the neighbor, the more influence it has. Knowledge of the particular dataset in question warrants whether weights are required or not.
+
+To identify the nearest neighbors, a distance metric is used. For these experiments, euclidean distance is used.
+
+\noindent The distance metric inherently makes KNN a computationally expensive method for high dimensional data. However, the computational time is reasonable when the data is in the low dimensions. Not only does KNN works best with low dimensional data, it also works best when there are a large number of samples to train with \citep{Marsland, VanderPlas}.
+
+KNN was chosen for these experiments because of its fast computational time in low dimensions (the spectra's dimensions are reduced in these experiments) and for its ability to separate spectra of classes that have extremely similar features. This is apparent when samples in KNN training space are represented as a N dimensional point, where minor changes in any of the N dimensions can significantly change its position in the N dimensional space. KNN was also chosen because of the large number of samples available for training.
+
+% ============================================================================================================
+\subsection{Random Forest}
+
+The idea of RF is that if one decision tree is good, then many trees (forest) should be better \citep{Marsland}. The most frequent name attached to RF  is Breiman \citep{Marsland}. The most interesting aspect about RF is that it creates randomness from a standard dataset. This is accomplished in two ways. First the individual trees are trained using slightly different sets of features from the data and second each tree uses a subset from its set of the features from the data. The RF classifier is an ensemble method. The output of the forest is by majority vote where the output of each individual tree is cast as a vote. 
+
+The individual trees are decision trees. An example of a decision tree can be seen in Fig. \ref{fig:DT}. For this example, the decision that needs to be made is whether a student should go to a party, study, go to a pub, or watch TV. To make this decision, there are three features, is there a party, is there a deadline, and is the student feeling lazy. A decision tree is read from the top (root) down. If the party feature is yes, then the decision is go to party, but if the party feature is no, then the outcome depends on deadline. If the deadline feature is set to urgent, then the decision is to study and so on. 
+
+        % DT Plot
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.3\linewidth]{figures/DT.png}
+            \caption{Example of a Decision Tree \citep{Marsland}.}
+            \label{fig:DT}
+        \end{figure}
+
+To build a decision tree, a feature is selected to be the root of the tree. In Fig. \ref{fig:DTBuild} $X_1$ is used as the root. Then a splitting value is chosen, in the case of Fig. \ref{fig:DTBuild} that value is $V$. This can be seen in Fig. \ref{fig:DT2} (b). Since all samples where $X_1$ is greater than $V$ are of a single class, that branch stops. For all samples where the value of $X_1$ is less than $V$, there are two classes, so another split is needed. The feature used for this split is $X_2$. For all samples whose value of $X_2$ is greater than $W$ is a single class and all samples whose value of $X_2$ is less than $W$ is a different single class. This is seen in Fig. \ref{fig:DT2} (c). This results in a decision tree seen in Fig. \ref{fig:DT3}.
+
+\begin{figure}
+\centering
+\subfloat[Steps to building a Decision Tree.\label{fig:DT2}]{%
+       \includegraphics[width=.45\textwidth]{figures/DT2.png}
+     }
+     \hfill
+     \subfloat[Resulting Decision Tree.\label{fig:DT3}]{%
+       \includegraphics[width=0.3\textwidth]{figures/DT3.png}
+     }
+\caption{Example of building a Decision Tree \citep{Marsland}.}
+\label{fig:DTBuild}
+\end{figure}
+
+Essentially a decision tree tries to separate the classes by splitting the tree at the different features. Each split in the tree has to be evaluated to see if it is the best possible split. For these experiments, the Gini impurity is used. The Gini impurity is calculated as follows \citep{Marsland}:
+
+\begin{equation}\label{eq:gini}
+I_G = 1 - \sum_{i=1}^{J} p_i^2
+\end{equation}
+
+\noindent where $I_G$ is the Gini impurity, $J$ is the number of classes, $p_I$ is the fraction of items that have the class label of class $i$.
+
+RF was chosen for these experiments because of its simplistic manner. Similarly to KNN, the training space can be represented as an N dimensional space, where minor changes in any of the N dimensions can significantly change the position of a N dimensional point in the N dimensional space. RF was also chosen because authors who used similar data reported excellent results \citep{YI}.
+
+\end{document}

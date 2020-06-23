@@ -1,0 +1,139 @@
+\documentclass[./AutomatedMK.tex]{subfiles}
+
+
+\begin{document}
+
+\section{Experiments}\label{sec:exp}
+
+In the following, we describe the results of the KNN and RF classifiers. We do not consider misclassification costs.
+
+    	The first step is to scale the flux to ensure that similar classes have similar flux measurements using eq. (\ref{eq:scale}). We use three datasets: Undersampled, Hybrid, and Oversampled balanced. All three datasets are created from the combined SDSS dataset described in Section \ref{sec:Approach_B}.
+
+The datasets go through feature selection described in Section \ref{sec:Approach_B}. After the feature selection phase, the KNN and RF classifiers are applied to the resulting reduced feature matrix. The accuracy, precision, recall, and F1 score are computed. In each experiment 10-fold cross validation is used to split the dataset into test and training sets. 
+
+	% KNN results
+        \begin{figure}
+            \centering
+            \includegraphics[width=.5\linewidth]{figures/KNN_Results.png}
+            \caption{10-Fold cross validation results for K-Nearest Neighbors using Undersampling (2,530 samples), Hybrid (957,398 samples), and Oversampling (2,657,466 samples)}
+            \label{fig:KNNR}
+        \end{figure}
+
+\begin{table*}
+\centering
+\caption{10-Fold cross validation results for KNN.}
+\label{tab:KNN}
+
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{Balance Method} & \multicolumn{6}{c|}{Accuracy (\%) for K Neighbors} \\       
+&   3.0 &   5.0 &   7.0 &   10.0 &   15.0 &   20.0 \\ \hline
+ Undersampled & 44.36 & 43.93 & 42.47 &  41.57 &  39.11 &  37.88 \\ \hline
+ Hybrid       & 97.15 & 96.22 & 95.36 &  94.19 &  92.65 &  91.41 \\ \hline
+ Oversampled  & 98.97 & 98.54 & 98.13 &  97.58 &  96.73 &  95.95 \\ \hline
+\end{tabular}
+\end{table*}
+
+	% KNN PRF
+        \begin{figure}
+            \centering
+            \includegraphics[width=.5\linewidth]{figures/KNN_PRF.png}
+            \caption{Precision, Recall, and F1 Score for Oversampling with K-Nearest Neighbors}
+            \label{fig:KNNPRF}
+        \end{figure}
+
+\begin{table*}
+\centering
+\caption{10-Fold cross validation Precision, Recall, and F1 Score for KNN using Oversampling.}
+\label{tab:PRFKNN}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{} & \multicolumn{6}{c|}{K Neighbors} \\ 
+           &   10.0 &   50.0 &   100.0 &   150.0 &   200.0 &   250.0 \\ \hline
+ Precision & 0.989757 & 0.985492 & 0.981557 & 0.976155 & 0.967970 & 0.960448 \\ \hline
+ Recall    & 0.989707 & 0.985373 & 0.981348 & 0.975772 & 0.967320 & 0.959524 \\ \hline
+ F1 Score  & 0.989692 & 0.985351 & 0.981322 & 0.975739 & 0.967290 & 0.959495 \\ \hline
+\end{tabular}
+\end{table*}
+
+
+% KNN Time
+\begin{table*}
+\centering
+\caption{10-Fold cross validation Execution Times for KNN using Oversampling.}
+\label{tab:KNNT}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{} & \multicolumn{6}{c|}{Time in seconds for K Neighbors} \\ 
+           &   10.0 &   50.0 &   100.0 &   150.0 &   200.0 &   250.0 \\ \hline 
+ Feature Selection & 1388.96 & 1388.96 & 1388.96 & 1388.96 & 1388.96 & 1388.96 \\ \hline
+ Train             &   10.81 &   10.72 &   10.74 &   10.68 &   10.67 &   10.76 \\ \hline
+ Test              &   67.89 &   82.63 &   95.85 &  111.24 &  134.73 &  156.39 \\ \hline
+\end{tabular}
+\end{table*}
+
+
+	% RF results
+        \begin{figure}
+            \centering
+            \includegraphics[width=.5\linewidth]{figures/RF_Results.png}
+            \caption{10-Fold cross validation results for Random Forest using Undersampling (2,530 samples), Hybrid (957,398 samples), and Oversampling (2,657,466 samples)}
+            \label{fig:RFR}
+        \end{figure}
+
+\begin{table*}
+\centering
+\caption{10-Fold cross validation results for RF.}
+\label{tab:RF}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{Balance Method} & \multicolumn{6}{c|}{Accuracy (\%) for N Trees} \\ 
+  &   10.0 &   50.0 &   100.0 &   150.0 &   200.0 &   250.0 \\ \hline
+ Undersampled &  46.61 &  52.55 &   54.22 &   53.80 &   53.73 &   53.51 \\ \hline
+ Hybrid       &  98.06 &  98.52 &   98.57 &   98.60 &   98.61 &   98.60 \\ \hline
+ Oversampled  &  99.36 &  99.51 &   99.53 &   99.54 &  N/A       &   N/A      \\ \hline
+\end{tabular}
+\end{table*}
+
+	% RF PRF results
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\linewidth]{figures/RF_PRF.png}
+            \caption{Precision, Recall, and F1 Score for Oversampling with Random Forest}
+            \label{fig:RFPRF}
+        \end{figure}
+
+\begin{table*}
+\centering
+\caption{10-Fold cross validation Precision, Recall, and F1 Score for for RF using Oversampling.}
+\label{tab:PRFRF}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{} & \multicolumn{6}{c|}{N Trees} \\ 
+  &     10.0 &     50.0 &    100.0 &    150.0 &    200.0 &    250.0  \\ \hline
+ Precision & 0.993592 & 0.995137 & 0.995318 & 0.995390 & N/A & N/A \\ \hline
+ Recall    & 0.993589 & 0.995133 & 0.995315 & 0.995387 & N/A & N/A \\ \hline
+ F1 Score  & 0.993580 & 0.995128 & 0.995310 & 0.995382 & N/A & N/A \\ \hline
+\end{tabular}
+\end{table*}
+
+% RF Time
+\begin{table*}
+\centering
+\caption{10-Fold cross validation Execution Times for RF using Oversampling.}
+\label{tab:RFT}
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+\multirow{2}{*}{} & \multicolumn{6}{c|}{Time in seconds for N Trees} \\ 
+           &   10.0 &   50.0 &   100.0 &   150.0 &   200.0 &   250.0 \\ \hline
+ Feature Selection & 1388.96 & 1388.96 & 1388.96 & 1388.96  &    N/A     &    N/A\\ \hline
+ Train             &  204.08 & 1013.98 & 2039.38 & 3068.80 &    N/A     &    N/A \\ \hline
+ Test              &    5.77 &   22.31 &   42.26 &   61.65 &    N/A     &    N/A     \\ \hline
+\end{tabular}
+\end{table*}
+
+The experiments are implemented in Python, using scikit-learn \citep{scikit-learn}. Due to the size of the  datasets (35.4 GB for hybrid balancing and 98.2 GB for oversampled balancing), the Python NumPy memmap \citep{numpy, memmap} module was used to read very large arrays from storage rather than RAM. The experiments are performed on a personal computer with the following relevant specifications: AMD Ryzen 7 1800x 16 logical core CPU, 16 GB RAM, and 1 TB Samsung 860 EVO Solid State Drive. 
+
+KNN and RF use the scikit-learn default parameters \citep{scikit-learn}. Precision, recall, and F1 score are computed using functions implemented by the scikit-learn sklearn.metrics package \citep{scikit-learn}. Feature selection is implemented using Algorithm \hyperlink{alg:FS}{1} in Python and uses the Python multiprocessing package \citep{multiprocessing} for parallelization.
+
+\end{document}

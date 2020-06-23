@@ -1,0 +1,77 @@
+% ----------------------------------------------------- B Star
+\begin{figure}[H]
+\centering
+
+\subfloat[Around the H$_\delta$ absorption line.\label{fig:B4102}]{%
+	\includegraphics[width=0.4\linewidth]{figures/B4102.png}}
+\subfloat[Around the Ca \RomanNumeralCaps{1} absorption line.\label{fig:B4227}]{%
+	\includegraphics[width=0.4\linewidth]{figures/B4227.png}}
+
+\caption{Example of a B Type Star focusing on wavelengths near $H_\delta$ and Ca \RomanNumeralCaps{1} absorption lines.}
+\label{fig:B}
+\end{figure}
+
+% ----------------------------------------------------- A Star
+\begin{figure}[H]
+\centering
+
+\subfloat[Around the H$_\delta$ absorption line.\label{fig:A4102}]{%
+	\includegraphics[width=0.4\linewidth]{figures/A4102.png}}
+\subfloat[Around the Ca \RomanNumeralCaps{1} absorption line.\label{fig:A4227}]{%
+	\includegraphics[width=0.4\linewidth]{figures/A4227.png}}
+
+\caption{Example of an A Type Star focusing on wavelengths near $H_\delta$ and Ca \RomanNumeralCaps{1} absorption lines. }
+\label{fig:A}
+\end{figure}
+
+% ----------------------------------------------------- K Star
+\begin{figure}[H]
+\centering
+
+\subfloat[Around the H$_\delta$ absorption line.\label{fig:K4102}]{%
+	\includegraphics[width=0.4\linewidth]{figures/K4102.png}}
+\subfloat[Around the Ca \RomanNumeralCaps{1} absorption line.\label{fig:K4227}]{%
+	\includegraphics[width=0.4\linewidth]{figures/K4227.png}}
+
+\caption{Example of a K Type Star focusing on wavelengths near $H_\delta$ and Ca \RomanNumeralCaps{1} absorption lines. }
+\label{fig:K}
+\end{figure}
+
+% ----------------------------------------------------- M Star
+\begin{figure}[H]
+\centering
+
+\subfloat[Around the H$_\delta$ absorption line.\label{fig:M4102}]{%
+	\includegraphics[width=0.4\linewidth]{figures/M4102.png}}
+\subfloat[Around the Ca \RomanNumeralCaps{1} absorption line.\label{fig:M4227}]{%
+	\includegraphics[width=0.4\linewidth]{figures/M4227.png}}
+
+\caption{Example of a M Type Star focusing on wavelengths near $H_\delta$ and Ca \RomanNumeralCaps{1} absorption lines. }
+\label{fig:M}
+\end{figure}
+
+% ----------------------------------------------------- F Star
+\begin{figure}[H]
+\centering
+
+\subfloat[Around the H$_\delta$ absorption line.\label{fig:F4102}]{%
+	\includegraphics[width=0.4\linewidth]{figures/F4102.png}}
+\subfloat[Around the Ca \RomanNumeralCaps{1} absorption line.\label{fig:F4227}]{%
+	\includegraphics[width=0.4\linewidth]{figures/F4227.png}}
+
+\caption{Example of a F Type Star focusing on wavelengths near $H_\delta$ and Ca \RomanNumeralCaps{1} absorption lines. }
+\label{fig:F}
+\end{figure}
+
+% ----------------------------------------------------- G Star
+\begin{figure}[H]
+\centering
+
+\subfloat[Around the H$_\delta$ absorption line.\label{fig:G4102}]{%
+	\includegraphics[width=0.4\linewidth]{figures/G4102.png}}
+\subfloat[Around the Ca \RomanNumeralCaps{1} absorption line.\label{fig:G4227}]{%
+	\includegraphics[width=0.4\linewidth]{figures/G4227.png}}
+
+\caption{Example of a G Type Star focusing on wavelengths near $H_\delta$ and Ca \RomanNumeralCaps{1} absorption lines. }
+\label{fig:G}
+\end{figure}

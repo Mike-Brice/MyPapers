@@ -1,0 +1,38 @@
+\documentclass[./AutomatedMK.tex]{subfiles}
+
+
+\begin{document}
+
+\section{Introduction}\label{sec:intro}
+
+Stellar classification is a fundamental task in stellar astrophysics. Traditionally, stellar spectra are classified by determining the wavelengths of absorption lines using wavelet transformations, statistical analysis, and using references to the Morgan Keenan (MK) Classification scheme \citep{MorganKeenan} or they are classified by comparing the best fit of the spectra to that of templates using statistical tests. The traditional classification schemes require complex data transformations and analysis to identify the class of a star based on its spectrum.
+
+The amount of astronomical data and dimensionality of said data is growing rapidly through more and more ambitious astronomical surveys. The Sloan Digital Sky Survey (SDSS) is an example of an ambitious astronomical survey with high quantity and dimensional data. 
+
+Presently, SDSS is creating the most detailed three-dimensional maps of the Universe ever made, with deep multi-color images of one-third of the sky, and spectra for more than three million astronomical objects \citep{York, sdss}. The SDSS provides stellar spectra with redshift wavelengths. The following experiments will classify stars using SDSS data runs 12, 13, and 14 optical spectra datasets. 
+
+The SDSS and other large astronomical surveys create challenging problems for a thorough and speedy analysis. As such, automated classification methods are explored. However, some classification algorithms are limited to low dimensional data, making the use of feature selection and feature extraction essential.
+
+Redshift creates complications for the automated classification of stellar spectra through the Feature Matrix. The automated process for identifying redshift and stellar class that the SDSS uses is as follows (\citeauthor{Bolton} and SkyServer: Redshifts, Classifications, and Velocity Dispersions \citep{RedClass}) :
+
+\begin{enumerate}
+
+\item Redshift and classification templates for galaxy, quasar, and CV star classes are constructed by performing a rest-frame principal-component analysis (PCA) of training samples of known redshift.
+\item The combination of redshift and template class that yields the overall best fit (in terms of lowest reduced chi-squared) is adopted as the pipeline measurement of the redshift and classification of the spectrum.
+\item The most common warning flag is set to indicate that the change in reduced chi-squared between the best and next-best redshift/classification is either less than 0.01 in an absolute sense, or less than 1\% of the best model reduced chi-squared, which indicates a poorly determined redshift.
+
+\end{enumerate}
+
+This paper proposes a novel approach to stellar classification characterized by the following:
+
+\begin{itemize}
+	\item Avoids complex transformation and statistical analysis of the spectra space by using machine learning.
+	\item Use spectra without redshift corrections.
+	\item Uses astronomical knowledge to perform feature selection
+\end{itemize}
+
+We classify stellar spectra into a complete MK Classification (spectral and luminosity) using a single classifier method. Astronomical knowledge is used to reduce the number of flux measurements. This results in key aspects of the spectra being preserved for classification which allows a  complete spectral and luminosity classification to be possible.
+
+The structure of this paper is as follows. Section \ref{sec:related} discusses related work. Section \ref{sec:ML} describes the machine learning algorithms and why they were chosen. Section \ref{sec:Approach_B} describes the approach to classification. Section \ref{sec:exp} describes the Experiments, results, and provides a discussion. Finally Section \ref{sec:conc} provides the conclusions.
+
+\end{document}

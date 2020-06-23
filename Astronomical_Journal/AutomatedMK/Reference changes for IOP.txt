@@ -1,0 +1,125 @@
+Q8/Q10
+
+Brice & Andonie 2019
+
+Title of publication: "Classification of Stars using Stellar Spectra collected by the Sloan Digital Sky Survey"
+
+Brice, M., & Andonie, R., in 2019 International Joint Conference on Neural Networks (IJCNN), (Budapest, Hungary: IEEE), 1-8, doi: 10.1109/IJCNN.2019.8852407
+
+===============================================================================================
+Elting et al. 2008
+
+Title of publication: "Photometric Classification of Stars, Galaxies and Quasars in the Sloan Digital Sky Survey DR6 Using Support Vector Machines"
+
+
+Elting, C., Bailer-Jones, C. A. L., & Smith, K. W. in 2008 Classification and Discovery in Large Astronomical Surveys, (Ringberg Castle, Germany: AIP), 9-14, doi: 10.1063/1.3059095
+
+===============================================================================================
+Kohavi 1995
+
+Title of publication: "A Study of Cross-Validation and Bootstrap for Accuracy Estimation and Model Selection"
+
+Kohavi, R., in 1995 14th International Joint Conference on Artificial Intelligence, Vol. 2, (San Francisco, CA, USA: Morgan Kaufmann Publishers Inc), 1137-1143, isbn: 1-55860-363-8
+
+===============================================================================================
+Zhang et al. 2008
+
+Title of publication: "A Stratified Approach for Automatic Stellar Spectra Classification"
+
+Zhang, J. N., Luo, A. L., & Tu, L. P., in 2008 International Congress on Image and Signal Processing, (Sanya, Hainan, China: IEEE), 249-252, doi: 10.1109/CISP.2008.723
+
+===============================================================================================
+Yi & Pan 2010
+
+Title of publication: "Application of random forest to stellar spectral classification"
+
+Yi, Z., & Pan., in 2010 International Congress on Image and Signal Processing, (Yantai, China: IEEE), 3129-3132, doi: 10.1109/CISP.2010.5648041
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Q9
+
+Mistake, Ailab is not a person... AILab is the facility the author works at. The author put Ailab in his bibtex citation as a co-author.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Q7
+
+Bolon-Canedo et al. 2015
+
+It's a book
+Publisher: Springer International Publishing
+Year 2015
+DOI: 10.1007/978-3-319-21858-8
+
+Bolón-Canedo, V., Sánchez-Maroño, N., &
+Alonso-Betanzos, A. 2015, Feature Selection for
+High-Dimensional Data (Springer International
+Publishing), doi: 10.1007/978-3-319-21858-8
+
+===============================================================================================
+Japkowicz 2000
+
+Publisher: The Association for the Advancement of Artificial Intelligence (AAAI) Press
+Pages: 10-15
+Year: 2000
+
+===============================================================================================
+Oliphant 2015
+
+It's a book
+Publisher: Published by Continuum Press, a division of Continuum Analytics, Inc.
+Year: 2015
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Q6/Q5
+
+Bazarghan M 2008
+
+NASA ADS: https://ui.adsabs.harvard.edu/abs/2008arXiv0804.2742B/abstract
+
+===============================================================================================
+Bolton et al. 2012
+
+Bolton, A. S., Schlegel, D. J., Aubourg, É., et al. 2012, AJ,
+144, 144, doi: 10.1088/0004-6256/144/5/144
+
+===============================================================================================
+Gray, R. O., & Corbally, J., C. Stellar Spectral Classification
+It's a book
+NASA ADS: https://ui.adsabs.harvard.edu/abs/2009ssc..book.....G
+
+===============================================================================================
+Chawla, N. V., Bowyer, K. W., Hall, L. O., & Kegelmeyer, W. P. 2002, Journal of Articial Intelligence Research, 16, 321-357, doi: 10.1613/jair.953
+
+===============================================================================================
+Dawson, K. S., Schlegel, D. J., Ahn, C. P., et al. 2013, AJ, 145, 10, doi: 10.1088/0004-6256/145/1/10
+
+===============================================================================================
+Ivezic, Z., Connolly, A., VanderPlas, J., & Gray, A. 2014, Statistics, Data Mining, and Machine Learning in Astronomy: A Practice Python Guide for the Analysis of Survey Data (Princeton University Press), doi: 10.23943/princeton/9780691151687.001.0001
+
+===============================================================================================
+Marsland
+It's a book
+No DOI or NASA ADS
+
+===============================================================================================
+Morgan Keenan
+It's a book
+
+===============================================================================================
+Pedregosa, F., Varoquaux, G., Gramfort, A., et al. 2011, J.
+Mach. Learn. Res., 12, 2825.
+http://dl.acm.org/citation.cfm?id=1953048.2078195
+
+===============================================================================================
+Stoughton, C., Lupton, R. H., Bernardi, M., et al. 2002,
+AJ, 123, 485, doi: 10.1086/324741
+
+===============================================================================================
+Xing, F., & Guo, P. 2004, in Advances in Neural Networks ISNN 2004 (Berlin, Heidelberg: Springer Berlin Heidelberg), 616-621, doi: 10.1007/978-3-540-28647-9_101
+
+
+
+
+
+
+

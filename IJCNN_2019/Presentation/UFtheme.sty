@@ -1,0 +1,59 @@
+\usepackage{tikz}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{amsmath,amssymb}
+
+
+% fonts ----------------
+\usepackage[T1]{fontenc}
+%\usepackage[sfdefault]{AlegreyaSans} %% Option 'black' gives heavier bold face
+%% The 'sfdefault' option to make the base font sans serif
+%\renewcommand*\oldstylenums[1]{{\AlegreyaSansOsF #1}}
+% fonts ----------------
+
+% Front page figure -----------------------------
+%
+%\usebackgroundtemplate{
+%\tikz[overlay,remember picture] \node[opacity=0.25, at=(current page.center)] {
+%   \includegraphics[height=\paperheight,width=\paperwidth]{background8.png}};
+%}
+% Front page figure -----------------------------
+
+
+% set COLORS -----------------------------
+\definecolor{UFblue}{RGB}{0,33,165} % UF BLUE
+\definecolor{UForange}{RGB}{250,70,22} % UF ORANGE
+%\useoutertheme[subsection=false]{miniframes} %eliminate subsection header by each slide
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{frametitle}{fg=black}
+\usecolortheme[named=blue]{structure}
+\mode<presentation>
+{
+  \usetheme[compress]{Dresden}
+\setbeamercolor{upper separation line head}{bg=black}
+
+  %\setbeamertemplate{navigation symbols}{}
+  %\setbeamertemplate{caption}[numbered]
+} 
+\useoutertheme{miniframes} %colors healine
+\setbeamercolor{section in head/foot}{parent=black, fg=black}
+
+\defbeamertemplate*{headline}{miniframes theme no subsection}
+{%
+  \begin{beamercolorbox}[colsep=1.5pt]{upper separation line head}
+  \end{beamercolorbox}
+  \begin{beamercolorbox}{section in head/foot}
+    \vskip2pt\insertnavigation{\paperwidth}\vskip2pt
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[colsep=1.5pt]{lower separation line head}
+  \end{beamercolorbox}
+}
+% set COLORS -----------------------------
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[page number]{}
+%gets rid of navigation symbols
+\setbeamertemplate{navigation symbols}{}
+%\setbeamertemplate{frametitle}{}

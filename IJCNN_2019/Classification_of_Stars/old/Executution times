@@ -1,0 +1,30 @@
+% Execution Times
+	\begin{table}
+	\caption{Execution Time for Hybrid balancing for Random Forest}
+        \label{tab:time}
+	\LARGE
+        \resizebox{3.5in}{!}{
+        \def\arraystretch{1.5}
+	\begin{tabular}{|c|L|L|L|L|L|L|L|L|L|L|}
+	\hline
+\multirow{2}{*}{} & \multicolumn{10}{c|}{Execution times (Seconds) for K number of features} \\ 
+   & 50.0 &   100.0 &   150.0 &   200.0 &   250.0 &   300.0 &   350.0 &   400.0 &   450.0 &  500.0  \\ \hline
+\multicolumn{11}{|c|}{Fisher + Artificially redshifted spectra} \\ \hline
+\def\arraystretch{1.1}\begin{tabular}{c} Feature\\Selection\end{tabular} & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ \\ \hline
+   Train  & 40.26 &     57.50 &     69.41 &     81.01 &     87.59 &     99.34 &    105.41 &    117.40 &    123.10 &    131.08 \\ \hline
+   Test &  0.61 &      0.59 &      0.60 &      0.61 &      0.69 &      0.67 &      0.70 &      0.74 &      0.77 &      0.79 \\ \hline
+\multicolumn{11}{|c|}{Fisher + Rest spectra} \\ \hline
+\def\arraystretch{1.1} \begin{tabular}{c} Feature\\Selection\end{tabular} &  6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ \\ \hline
+   Train &  39.48 &     56.49 &     68.08 &     78.97 &     85.31 &     95.70 &    101.53 &    113.24 &    120.82 &    130.91 \\ \hline
+   Test &  0.66 &      0.66 &      0.63 &      0.62 &      0.66 &      0.66 &      0.71 &      0.75 &      0.83 &      0.83 \\ \hline
+
+\multicolumn{11}{|c|}{Chi Squared + Artificially redshifted spectra} \\ \hline
+\def\arraystretch{1.1}\begin{tabular}{c} Feature\\Selection\end{tabular} & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ \\ \hline
+   Train  & 40.26 &     57.50 &     69.41 &     81.01 &     87.59 &     99.34 &    105.41 &    117.40 &    123.10 &    131.08 \\ \hline
+   Test &  0.61 &      0.59 &      0.60 &      0.61 &      0.69 &      0.67 &      0.70 &      0.74 &      0.77 &      0.79 \\ \hline
+\multicolumn{11}{|c|}{Chi Squared + Rest spectra} \\ \hline
+\def\arraystretch{1.1} \begin{tabular}{c} Feature\\Selection\end{tabular} &  6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ & 6.81 $\times$ 10$^5$ \\ \hline
+   Train &  39.48 &     56.49 &     68.08 &     78.97 &     85.31 &     95.70 &    101.53 &    113.24 &    120.82 &    130.91 \\ \hline
+   Test &  0.66 &      0.66 &      0.63 &      0.62 &      0.66 &      0.66 &      0.71 &      0.75 &      0.83 &      0.83 \\ \hline
+	\end{tabular}}
+	\end{table}

@@ -1,0 +1,22 @@
+        % Hertzsprung Russel Diagram figure || This image can be removed if page space is needed
+        \begin{figure}
+            \centering
+            \includegraphics[scale = .51]{HR.jpg}
+            \caption{Hertzsprung Russell Diagram \cite{hr}}
+            \label{fig:HR}
+        \end{figure}
+
+\begin{table}
+        \centering
+        %\Large
+        \caption{Example of the feature matrix}
+        \label{tab:feature-matrix}
+        \resizebox{3.5in}{!}{
+        \def\arraystretch{1.2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+      Class     & \begin{tabular}[c]{@{}c@{}}Wavelength:\\ 3807.15 $\mathring{A}$\end{tabular} & \begin{tabular}[c]{@{}c@{}}Wavelength:\\ 3808.03 $\mathring{A}$\end{tabular} & \begin{tabular}[c]{@{}c@{}}Wavelength:\\ 3808.90 $\mathring{A}$\end{tabular} & \begin{tabular}[c]{@{}c@{}}Wavelength:\\ 3810.66 $\mathring{A}$\end{tabular} \\ \hline
+Spectrum 1 & 0.09193                                                       & 0.713104                                                      & 0.80613                                                       & 0.73711                                                       \\ \hline
+Spectrum 2 & 0.13257                                                       & 0.652684                                                      & 0.90623                                                       & 0.52371                                                       \\ \hline
+\end{tabular}}
+\end{table}

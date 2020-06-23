@@ -1,0 +1,24 @@
+\documentclass[./AutomatedMK.tex]{subfiles}
+
+
+\begin{document}
+
+\section{Related Work}\label{sec:related}
+
+\citeauthor{YI} uses Random Forest (RF) to classify stellar spectra. The authors also compared Random Forest to Neural Networks (Multi-layer Perceptron). The spectra used in their experiments are taken from \citeauthor{Pickles}. RF is implement with mtry = 400 amd mtree = 1000. The Multi-layer Perceptron has 5 nodes in the input layer, N feature nodes in the input layer and 5 nodes in the first hidden layer, 1 node in the second hidden layer, and 1 node in the output layer. The authors find that RF performed better than the Multi-layer Perceptron with RMSE of 1.04 and 1.36 respectively. 
+
+\citeauthor{Xing} uses a Support Vector Machine (SVM) for stellar spectra classification. The authors utilize Principle Component Analysis (PCA) to reduce the dimensions of the spectra and wavelet transformations to reduce noise in the spectra. The stellar spectra used in their experiments are selected from \citeauthor{Jacoby}. \citeauthor{Xing} reports 81.66\% accuracy for just SVM with no data reduction, 93.26\% for wavelet + SVM and 81.30\% for PCA + SVM.
+
+\citeauthor{Weaver} make the following claim: "The results of this series of papers and of the preceding section make it apparent that a complete classification system is probably beyond the capabilities of a single network. However, we have demonstrated that [Artificial Neural Network (ANN)] components of a system of ANNs can successfully perform a complete classification.". This claim is important because this paper is able to classify into a complete classification using a single classifier.
+
+\citeauthor{Schierscher} reduce the spectra dimensions by using interesting areas in the spectra. These areas are the Hydrogen lines (H$_\alpha$ to H$_\delta$), the Ca H + K lines and the G band. They resulted in 2400 dimensions being reduced to 435. This paper uses a related approach but with only two lines and reducing 4617 dimensions to 37. The authors are able to achieve an 85\% match in comparison with SEGUE Stellar Parameter Pipeline (SSPP) using an ANN. However. the authors never address the fact that their data is imbalanced. The authors acknowledge that the majority of samples were classified as the majority classes but they do not take into account the bias the model has towards the majority class. What is more interesting is how well the model handles the minority classes, but this is not explored in their paper.
+
+\citeauthor{Almeida} use K Means clustering to classify SDSS stellar spectra. Classification consists of three points \citep{Almeida}:
+\begin{enumerate}
+\item Find the number of clusters and their centers.
+\item Assign each spectrum to one of these centers.
+\item Estimate the probability that the choice is correct. This is used to quantify the goodness of the classification.
+\end{enumerate}
+\noindent The authors experiment with spectra with the continuum intact and spectra with the continuum removed. Both of these experiments has a problem,  the authors used K Means in a 3849 dimensional space. More over, the authors ran their experiments for about two hours. The experiments utilizing spectra with its continuum seem to generate 16 major classes and 10 minor classes where 99\% of the spectra lie in the major classes \citep{Almeida}. For spectra with its continuum removed generates 13 major classes and 1 minor class \citep{Almeida}. Not only does this author not generate classes with a one to one ratio between cluster and MK classes making their results hard to compare, they do not reduce the number of dimensions nor use a computationally fast tool. 
+
+\end{document}

@@ -1,0 +1,20 @@
+RV > 200 km/s and RV < 200 km/s
+
+Proceedures
+
+Take dataset and transform into two arrays of Z < 0.00066 and Z >= 0.00066
+
+Divide both arrays into 10 folds.
+
+For each validation:
+	Take one fold from each array to use as the two test sets. 
+	Take the remainding folds and combine to form the train set.
+	Build Model
+	Test RV > 200 km/s and store both times, accuracy, precision, recall, and f1 score in result array 1
+	Test RV < 200 km/s and store both times, accuracy, precision, recall, and f1 score in result array 2
+	Repeat for all 10 cross validations
+
+Report scores and make tables.
+	
+	
+	

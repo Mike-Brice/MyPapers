@@ -1,0 +1,10 @@
+Maybe instead of balancing by matching class distribution, balance by taking each sample from Undersampling and give it multiple new Redshift values ranging -0.0008 - 0.0008 with 0.0002 steps.
+
+
+21 samples per class
+
+9 RV classes
+
+189 total samples per class
+
+8694 samples
